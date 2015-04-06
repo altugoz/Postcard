@@ -73,14 +73,6 @@
                                     <rect key="frame" x="16" y="283" width="349" height="30"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F4z-pg-xYK">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="347" width="349" height="30"/>
-                                </variation>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwF-3V-iYn">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.59824969971896769" blue="0.14018982546243752" alpha="1" colorSpace="calibratedRGB"/>
@@ -104,24 +96,43 @@
                                     <rect key="frame" x="16" y="87" width="349" height="43"/>
                                 </variation>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F4z-pg-xYK">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="347" width="349" height="30"/>
+                                </variation>
+                            </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4F-QM-1Im">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="405" width="349" height="23"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="fWc-da-gcF"/>
                                 <exclude reference="DrU-Oa-T5o"/>
-                                <exclude reference="F4z-pg-xYK"/>
                                 <exclude reference="xwF-3V-iYn"/>
                                 <exclude reference="4q4-qo-MkB"/>
+                                <exclude reference="F4z-pg-xYK"/>
+                                <exclude reference="D4F-QM-1Im"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="fWc-da-gcF"/>
                                 <include reference="DrU-Oa-T5o"/>
-                                <include reference="F4z-pg-xYK"/>
                                 <include reference="xwF-3V-iYn"/>
                                 <include reference="4q4-qo-MkB"/>
+                                <include reference="F4z-pg-xYK"/>
+                                <include reference="D4F-QM-1Im"/>
                             </mask>
                         </variation>
                     </view>
@@ -130,6 +141,7 @@
                         <outlet property="enterNameTextField" destination="DrU-Oa-T5o" id="LJ6-82-apA"/>
                         <outlet property="mailButton" destination="xwF-3V-iYn" id="ZiL-m5-Dl6"/>
                         <outlet property="messageLabel" destination="4q4-qo-MkB" id="Nm0-ml-ztL"/>
+                        <outlet property="nameLabel" destination="D4F-QM-1Im" id="M4H-N7-vbw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
